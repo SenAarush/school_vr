@@ -18,7 +18,7 @@ export default function Hero(props: HeroProps) {
 
                         <img src="/bag.png" className=" max-h-[80%] absolute top-[-20px] md:top-0 scale-100 z-0" />
 
-                        <div className="absolute bottom-[-160px] md:bottom-[-80px] py-5 border border-black w-full flex flex-col items-center">
+                        <div className="absolute bottom-[-160px] md:bottom-[-80px] py-5 w-full flex flex-col items-center">
                             <p className=" self-end w-full text-center uppercase text-sm tracking-[6px]">
                                 New Way of Learning
                             </p>
