@@ -16,6 +16,7 @@ export default function Navbar(props: NavbarProps) {
                     <Link to="" className={LinkClass}>About Us</Link>
                     <Link to="" className={LinkClass}>Blogs</Link>
                     <Link to="" className={LinkClass}><span className="text-[#000]">Book A Demo</span></Link>
+                    <button className="bg-[#fff] tracking-wide py-2 px-4 text-sm rounded-full">Get in Touch</button>
                 </ul>
             </div>
             {/* <Sidebar className="bg-[#000]/20 opacity-90 absolute max-w-[425px] rounded-r-lg min-h-[93dvh] py-8 top-7 px-8 backdrop-filter backdrop-blur-sm" /> */}
