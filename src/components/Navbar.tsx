@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Sidebar from "./SideBar"
+// import Sidebar from "./SideBar"
 
 type NavbarProps = {
     className?: string,

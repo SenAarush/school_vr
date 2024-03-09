@@ -1,7 +1,3 @@
-import styles from "./page.css"
-
-import VR from "../../components/VR"
-import Labs from "../../components/Labs"
 import Hero from "../../components/Hero"
 import Navbar from "../../components/Navbar"
 

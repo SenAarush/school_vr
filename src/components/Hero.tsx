@@ -1,8 +1,5 @@
 import BackedBy from "./BackedBy"
 import SchoolHeroText from "./SchoolHeroText"
-import Navbar from "./Navbar"
-
-
 
 type HeroProps = {
     className: string
