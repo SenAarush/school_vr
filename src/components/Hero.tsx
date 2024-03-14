@@ -1,8 +1,7 @@
-import BackedBy from "./BackedBy"
 import SchoolHeroText from "./SchoolHeroText"
 
 type HeroProps = {
-    className: string
+    className?: string
 }
 
 export default function Hero(props: HeroProps) {
@@ -12,7 +11,7 @@ export default function Hero(props: HeroProps) {
                 <div className="bg-[url('vec_outline.png')] min-w-full min-h-[67.5%] bg-no-repeat bg-center">
                     <div className="bg-[url('/vec.png')] min-w-[100%] min-h-[100%] bg-no-repeat bg-center relative top-0 flex flex-col items-center justify-center">
 
-                        <SchoolHeroText className="text-tertiary tracking-wide md:text-9xl sm:text-7xl  text-6xl uppercase font-bold pt-20 md:pt-0" />
+                        <SchoolHeroText className="pt-20 text-6xl font-bold tracking-wide uppercase text-tertiary md:text-9xl sm:text-7xl md:pt-0" />
 
                         {/* Change MD media query */}
 
@@ -22,7 +21,7 @@ export default function Hero(props: HeroProps) {
                             <p className=" self-end w-full text-center uppercase text-sm tracking-[6px]">
                                 New Way of Learning
                             </p>
-                            <BackedBy className="max-w-lg min-h-14 mt-5 rounded-md bg-[#fff] shadow-xl" />
+                            {/* <BackedBy className="max-w-lg min-h-14 mt-5 rounded-md bg-[#fff] shadow-xl" /> */}
                             <button className="bg-[#fff] shadow-md tracking-wide mt-10 py-2 px-4 text-sm rounded-full md:hidden">Get in Touch</button>
 
                         </div>

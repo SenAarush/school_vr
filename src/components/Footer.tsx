@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
-import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
-import { MdLocalPhone } from "react-icons/md";
-import { BiBuildings } from "react-icons/bi";
+import Detail from "./Detail";
 
-export default function Footer() {
+type FooterProps = {
+    className?: string
+}
+// sm:hidden
+
+
+export default function Footer(props: FooterProps) {
     const H1class = "mb-4 font-bold text-lg tracking-wider uppercase text-[#fff]";
     const ULclass = "flex flex-col sm:w-1/4 w-1/2 py-5 text-[#b8b8b8]";
     const Liclass = "py-[2px]";
@@ -13,8 +17,10 @@ export default function Footer() {
         { title: "Company", items: ["Contact", "About Us", "Careers", "Help Center"] }
     ]
 
+    // text-[#4D5157]
+
     return (
-        <footer className="">
+        <footer className={props.className}>
             <div className="flex-col sm:flex-row px-10 pt-32 w-full bg-gradient-to-r from-[#292d32] to-[#4D5157]">
                 {/* List Item container + Other Links */}
                 <div className="md:flex md:justify-between">
@@ -28,24 +34,7 @@ export default function Footer() {
                             </ul>
                         ))}
                     </div>
-                    <ul className="flex flex-col gap-4 py-3 mb-12 text-[#fff] font-extralight">
-                        <li className="flex items-center ">
-                            <MdAlternateEmail className="mr-5 text-3xl " />
-                            <span className="text-xl">Admin@Aonix.in</span>
-                        </li>
-                        <li className="flex items-center">
-                            <MdLocalPhone className="mr-5 text-3xl " />
-                            <span className="text-xl">+91 9508382971</span>
-                        </li>
-                        <li className="flex items-center">
-                            <BiBuildings className="mr-5 text-3xl " />
-                            <span className="text-xl">Arunoday, Sihodih</span>
-                        </li>
-                        <li className="flex items-center">
-                            <MdLocationOn className="mr-5 text-3xl " />
-                            <span className="text-xl">+91 9508382971</span>
-                        </li>
-                    </ul>
+                    <Detail className="flex flex-col gap-4 py-3 mb-12 text-[#ffffffe3] font-extralight" />
                 </div>
 
                 {/* Links Container */}
@@ -56,25 +45,3 @@ export default function Footer() {
         </footer >
     )
 }
-
-{/* <div className="flex flex-col px-5 pb-10 bg-tertiary sm:items-center">
-                <ul className="sm:hidden flex flex-col gap-7 py-3 mb-12 text-[#4D5157] font-medium">
-                    <li className="flex items-center ">
-                        <MdAlternateEmail className="mr-5 text-3xl " />
-                        <span className="text-xl">Admin@Aonix.in</span>
-                    </li>
-                    <li className="flex items-center">
-                        <MdLocalPhone className="mr-5 text-3xl " />
-                        <span className="text-xl">+91 9508382971</span>
-                    </li>
-                    <li className="flex items-center">
-                        <BiBuildings className="mr-5 text-3xl " />
-                        <span className="text-xl">Arunoday, Sihodih</span>
-                    </li>
-                    <li className="flex items-center">
-                        <MdLocationOn className="mr-5 text-3xl " />
-                        <span className="text-xl">Giridh, Jharkhand 815301</span>
-                    </li>
-                </ul>
-                
-            </div> */}

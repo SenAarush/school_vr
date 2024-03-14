@@ -1,6 +1,7 @@
-import BackedBy from "../../components/BackedBy"
+import BackedBy from "./BackedBy"
+import Detail from "./Detail"
 
-type UnamedFunctionProps = {
+type AboutProps = {
     className?: string
 }
 
@@ -15,7 +16,7 @@ function AboutImageContainer(props: AboutImageContainerProps) {
         </div>
     )
 }
-export default function UnamedFunction(props: UnamedFunctionProps) {
+export default function About(props: AboutProps) {
     return (
         <div className={props.className}>
 
@@ -37,7 +38,8 @@ export default function UnamedFunction(props: UnamedFunctionProps) {
                 </p>
                 
                 <BackedBy className="bg-[#fff] lg:self-start rounded-3xl sm:max-h-32  sm:rounded-lg sm:hover:ring-2 sm:hover:ring-[orange] sm:transition sm:duration-[400ms] lg:w-full shadow-xl mb-7 py-6 lg:py-2" />
-                
+
+                <Detail className="sm:hidden flex flex-col pt-4 gap-4 text-[#030101e3] font-extralight" />
             </section>
         </div>
     )
