@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
-import { MdOutlineLocationOn } from "react-icons/md";
 import { BiBuildings } from "react-icons/bi";
-
-import Form from "./Form";
-import BackedBy from "./BackedBy";
 
 export default function Footer() {
     const H1class = "mb-4 font-bold text-lg tracking-wider uppercase text-[#fff]";
