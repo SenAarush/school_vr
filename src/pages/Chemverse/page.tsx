@@ -1,13 +1,9 @@
-import Hero from "../../components/Hero"
-import Navbar from "../../components/Navbar"
+type ChemVerseProps = {
+    className?: string
+}
 
-export default function Chemverse() {
-    return (
-        <>
-            <Hero className="absolute z-0"/>
-            <Navbar className="absolute top-0 w-full z-1" />
-        </>
-
-
+export default function ChemVerse(props: ChemVerseProps){
+    return(
+        <div className={props.className}>Chemverse Page</div>
     )
 }
