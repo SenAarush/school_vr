@@ -6,15 +6,9 @@ import Footer from "../../components/Footer"
 import Hero from "../../components/Hero"
 import Navbar from "../../components/Navbar"
 
-
-type LandingProps = {
-    className?: string
-}
-
-
-export default function Landing(props: LandingProps) {
+export default function Landing() {
     return (
-        <div className={props.className}>
+        <div className="overflow-hidden max-w-fit">
             <Hero />
             <Navbar className="absolute top-0 w-full z-1" />
             <AI className="py-10 bg-gradient-to-r to-[#c6830e] from-[#ecc243] w-dvh h-dvh flex items-center justify-center relative overflow-hidden" />
