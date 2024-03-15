@@ -11,15 +11,14 @@ export default {
       tertiary: '#EDEDED'
     },
     extend: {
-      backgroundImage: {
-        'bag': `url('/bag.png')`,
-        'bg1': `url('/bg1.png')`,
-        'pattern': `url('/pattern.png')`,
-        'infinity': `url('/Vector.png')`,
-        'rect': `url('/rect.png')`,
-        'rect-white': `url('/rect_white.png')`,
-        'hero': `url('/hero.png')`,
-        'outline': `url('/vec_outline.png')`
+      animation: {
+        'move-up-down': 'moveUpDown 5s infinite ease-in-out',
+      },
+      keyframes: {
+        moveUpDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
       },
     },
   },
