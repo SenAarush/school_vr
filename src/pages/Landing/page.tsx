@@ -17,7 +17,7 @@ export default function Landing(props: LandingProps) {
         <div className={props.className}>
             <Hero />
             <Navbar className="absolute top-0 w-full z-1" />
-            <AI className="py-10 bg-gradient-to-r to-[#c6830e] from-[#ecc243] w-dvh h-dvh flex lg:items-center lg:justify-center relative" />
+            <AI className="py-10 bg-gradient-to-r to-[#c6830e] from-[#ecc243] w-dvh h-dvh flex items-center justify-center relative overflow-hidden" />
             
             {/* place the alert in the starting section */}
             {/* <Alert className="lg:flex hidden absolute flex-col justify-center w-56 rounded-3xl right-10 bottom-12 h-36 bg-[#292d32] px-5 text-[#fff]" /> */}

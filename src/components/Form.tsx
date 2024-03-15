@@ -26,7 +26,7 @@ export default function Form(props: FormProps) {
 
     const FormParent = "relative px-6"
     const InputClass = "w-full p-[10px] rounded-md bg-[#f4f4f4]"
-    const ErrorClass = "absolute top-3 right-8 text-[red]"
+    const ErrorClass = "absolute text-[0.6rem] sm:text-lg sm:top-2 top-4 right-8 text-[red]"
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={props.className}>
